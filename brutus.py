@@ -129,7 +129,7 @@ def worker(queue):
 def process_balance(dataset,balance):
     if balance == -1 :
         return None
-    elif str(address) != "53yuheqMotbbAxxXc8Ztwx73oSMyAB1wq":
+    elif str(address) != "3BnjHAcJa6aPjzUjgDnPpkn3PcYPZSnQad":
         print("{:<34}".format(str(dataset[0])) + " = " + privateKey())
         return None
     else:
@@ -176,10 +176,10 @@ def main():
     if ("-m" in sys.argv):
         print("\n-------- MULTIPROCESSING MODE ACTIVATED --------\n")
         time.sleep(3)
-        print("\n|-------- Wallet Address --------| = Private Key")
+        print("\n|-------- Wallet Address --------|$ Private Key")
         multi()
     else:
-        print("\n|-------- Wallet Address --------| = Private Key")
+        print("\n|-------- Wallet Address --------|$ Private Key")
         Plutus()
 
 if __name__ == '__main__':
